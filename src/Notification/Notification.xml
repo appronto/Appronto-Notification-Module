@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="Notification.widget.Notification" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>Notification</name>
+  <description>This widget shows a notification based on the noty jQuery plugin</description>
+
+  <icon>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADHklEQVR42mNgGAWjYCiA0FX/mROnnrcC4rLEaReWJk29cCJ56oUHSVPOvUmaev5t0rQLT4D0OSBeD5RrSp560SO2+yI3xRYnTL6kmzzt/LTEKedex0089T+m9+j/qO5D/yM7D/yP6NiPioFikV2H/kf3HP0fN+Hk/8TJZ78BHbQ6Ycp5V5Itjp18UTFx6rm18RNP/43oPPg/tGU3WTi8ff//2L7j/4EOORU/+bw1UZYnTjufCPTtl5DWvf8DG3dQBQc37/4f23/iLzB6ehzq97PgtDxp6rmm8K7D/3xrt/ynBQZ5KmHy2S2h9VfYMC2fcj47uGXPf6/KDTTF/vXb/8dPPrsYxfL4SWeUQ1r2fXcrXfOfHtivbtv/xEnnQuAOiOg8PMupaOV/euKgln2XoNb/Z/Ss2vTGPm/pf3pi5+LV/5MmnFYH+v6clG3O4v/WWQvpjr1rtgcx2GQuVTJPm/t/ILBV5sIYBo2IdgWdiJ7/RgnT/pskz6ILNk6a+V8vZsJ/jbDOSAYG4zRW9eCWbxrBrf+1w7uBEpP+G8RPownWj5v6Xyey779GSNt/kH1qAS1m4GSoHtSyASQAw5qhHf+1Inr/a0dN/K8TPYlCPPG/dmT/f82wrv/IdqgHtT5jCA1lBjtALbDFBijwD1kBHId0ADV3gx2kFTkB7Ch8GKRGK6IPrEcjtPM/VjNBvg9qLUYpjIACU3EpRsXA4AtpBxoOdBjQAhgGORQsR4QZQM+eBEU9alkMFACGxGbiHEE+Bkb3TUW/VnHstREoQQa1zqaZ5cEt+1U8K0XxVsfasdMKgNmD2ha/B/q8gIGhngmv5VoJUyU0I/veIgUXEDeDaTKD+4FaUEuVQkC9AOGWiEM9i2ZE3x5ki9UCm/6rBjQeUPZrslYPbs0HppE1QPqWRlDLb0xftv4F6nsMxNuB0Vir6t9kDjSVkchGWD2TRmjXfJilaoGNn1X9G1cpBTQ641IPSkjyvs2KqkHtSup+9VIMxjNZyWp4iruVcKsFNM9UDWzapRLQ2KAcWO+k4pnLTrcmt6BLOT/BxDEKhjMAAKqk4x/XyeHLAAAAAElFTkSuQmCC</icon>
+
+    <properties>
+        <property key="displayAttr" type="attribute">
+            <caption>Show Notification</caption>
+            <category>Notification</category>
+            <description>Attribute to determine if the notification should (or should not) be displayed</description>
+            <attributeTypes>
+                <attributeType name="Boolean"/>
+            </attributeTypes>
+        </property>
+        <property key="textAttr" type="attribute">
+            <caption>Display Text</caption>
+            <category>Notification</category>
+            <description>Text to display in the notification</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+       <property key="typeAttr" type="attribute">
+            <caption>Type</caption>
+            <category>Notification</category>
+            <description>The type of notification to render (alert,success,error,warning,information)</description>
+			 <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+		 <property key="layoutAttr" type="attribute">
+            <caption>Layout</caption>
+            <category>Notification</category>
+            <description>The location to render the notification (top,topLeft,topCenter,topRight,center,centerLeft,centerRight,bottom,bottomLeft,bottomCenter,bottomRight)</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+		<property key="timeoutAttr" type="attribute">
+            <caption>Timeout</caption>
+            <category>Notification</category>
+            <description>Dismiss the notification after a certain interval (milliseconds.) Enter 0 to dismiss the notification only on click</description>
+            <attributeTypes>
+                <attributeType name="Long"/>
+            </attributeTypes>
+        </property>
+        <property key="mfOnClose" type="microflow" required="false">
+            <caption>On Close</caption>
+            <category>Events</category>
+            <description>Microflow trigger on close,through the timeout of the notification.</description>
+            <returnType type="Void"></returnType>
+        </property>
+        <property key="mfOnCloseClick" type="microflow" required="false">
+            <caption>On Close Click</caption>
+            <category>Events</category>
+            <description>Microflow trigger on close, through a click of the notification.</description>
+            <returnType type="Void"></returnType>
+        </property>
+    </properties>
+</widget>
