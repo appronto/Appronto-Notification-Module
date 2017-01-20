@@ -82,11 +82,17 @@ button:focus {
   height: 60px; }
 
 .btn-link {
+  margin-top: 16px !important;
   color: #2159a6 !important;
   background-color: transparent !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  margin: 0px;
+  padding: 0px; }
   .btn-link:hover {
-    background: #e8e8e8 !important;
+    background-color: transparent !important;
+    color: #444;
+    text-decoration: none; }
+  .btn-link:active {
     color: #444;
     text-decoration: none; }
 
@@ -101,10 +107,8 @@ button:focus {
   .btn-default:hover {
     background: #cfcfcf;
     color: #444;
-    border: none; }
-  .btn-default:hover {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-    transition-delay: 0s; }
+    border: none;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
 
 .btn-primary {
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);

@@ -71,16 +71,25 @@ button:focus {
 
 // Buttons Alternate Style
 .btn-link {
-	
+  margin-top: 16px!important;
 	color: $brand-primary!important;
 	background-color:transparent!important;
-    box-shadow: none!important;
+  box-shadow: none!important;
+  margin: 0px;
+  padding: 0px;
+
 
 	&:hover {
-	background: $brand-default!important;
+	background-color:transparent!important;
 	color: $font-base-color;
 	text-decoration: none;
 	}
+
+  &:active {
+  
+  color: $font-base-color;
+  text-decoration: none;
+  }
 }
 
 .btn-default {
@@ -94,14 +103,12 @@ button:focus {
 	background: darken($brand-default, 10%);
 	color: $font-base-color;
 	border: none;
-
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
-     &:hover {
-     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-      transition-delay: 0s;
-      }
+     
 	/* Styles here */
 }
+
 .btn-primary {
 	 transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       transition-delay: 0.2s;

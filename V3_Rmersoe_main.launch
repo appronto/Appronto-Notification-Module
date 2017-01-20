@@ -10,7 +10,7 @@
 <mapEntry key="M2EE_ADMIN_PASS" value="1"/>
 <mapEntry key="M2EE_ADMIN_PORT" value="8090"/>
 <mapEntry key="M2EE_CONSOLE_PATH" value="C:/Program Files/Mendix/6.9.1/modeler/MendixConsoleLog.exe"/>
-<mapEntry key="MXCONSOLE_BASE_PATH" value="E:/Documents/V3_Rmersoe-main/deployment"/>
+<mapEntry key="MXCONSOLE_BASE_PATH" value="C:/Users/rmers/Documents/Mendix/V3_Rmersoe-main/deployment"/>
 <mapEntry key="MXCONSOLE_RUNTIME_PATH" value="C:/Program Files/Mendix/6.9.1/runtime"/>
 <mapEntry key="MXCONSOLE_RUNTIME_PORT" value="8080"/>
 <mapEntry key="MXCONSOLE_RUNTIME_LISTEN_ADDRESSES" value="*"/>
@@ -26,6 +26,6 @@
 <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.apache.felix.main.Main"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="V3_Rmersoe_main"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.net.preferIPv4Stack=true -Djava.library.path=&quot;C:/Program Files/Mendix/6.9.1/runtime/lib/x64;E:/Documents/V3_Rmersoe-main/deployment/model/lib/userlib&quot; -Dfile.encoding=UTF-8 -Djava.io.tmpdir=&quot;E:/Documents/V3_Rmersoe-main/deployment/data/tmp&quot; -Djava.security.policy==&quot;E:\Documents\V3_Rmersoe-main\deployment\data\.policy&quot; -Dorg.osgi.framework.security=&quot;osgi&quot; -Dcom.mendix.policy.file=&quot;E:\Documents\V3_Rmersoe-main\deployment\data\security.policy&quot; -Dfelix.config.properties=file:run/felixconfig.properties -Dorg.osgi.service.http.port=8080"/>
-<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="E:/Documents/V3_Rmersoe-main/deployment"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.net.preferIPv4Stack=true -Djava.library.path=&quot;C:/Program Files/Mendix/6.9.1/runtime/lib/x64;C:/Users/rmers/Documents/Mendix/V3_Rmersoe-main/deployment/model/lib/userlib&quot; -Dfile.encoding=UTF-8 -Djava.io.tmpdir=&quot;C:/Users/rmers/Documents/Mendix/V3_Rmersoe-main/deployment/data/tmp&quot; -Djava.security.policy==&quot;C:\Users\rmers\Documents\Mendix\V3_Rmersoe-main\deployment\data\.policy&quot; -Dorg.osgi.framework.security=&quot;osgi&quot; -Dcom.mendix.policy.file=&quot;C:\Users\rmers\Documents\Mendix\V3_Rmersoe-main\deployment\data\security.policy&quot; -Dfelix.config.properties=file:run/felixconfig.properties -Dorg.osgi.service.http.port=8080"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:/Users/rmers/Documents/Mendix/V3_Rmersoe-main/deployment"/>
 </launchConfiguration>
