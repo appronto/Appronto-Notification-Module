@@ -1,3 +1,4 @@
 .svn
 deployment
 .mendix-cache
+*.lock
