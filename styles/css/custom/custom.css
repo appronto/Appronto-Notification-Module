@@ -97,7 +97,7 @@ button:focus {
     text-decoration: none; }
 
 .btn-default {
-  background: #e8e8e8;
+  background: #000;
   color: #444;
   border: none;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
