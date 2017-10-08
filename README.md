@@ -10,6 +10,7 @@ This widget provides the functionality to display a custom message, sourced from
 
 # Configuration
 
+* Download module and give every User role the Module role ApprontoNotification.User so every user can see the notification
 * Drop the widget into the context of an entity
 * Apply the following properties:
  * *Show Notification* - Boolean attribute to determine if the message should be rendered
