@@ -145,7 +145,7 @@ define([
 				_timeoutAttrHandle = null;
 
             // Release handles on previous object, if any.
-            if (this._handles) {
+            if (this._handles && _objectHandle != null){
                 this._handles.forEach(function (handle, i) {
                     mx.data.unsubscribe(handle);
                 });
@@ -201,7 +201,9 @@ define([
                     })
                 });
 
-                this._handles = [_objectHandle, _displayAttrHandle, _textAttrHandle, _typeAttrHandle, _layoutAttrHandle ,_timeoutAttrHandle];
+				if (_objectHandle != null){ 
+					this._handles = [_objectHandle, _displayAttrHandle, _textAttrHandle, _typeAttrHandle, _layoutAttrHandle ,_timeoutAttrHandle];
+				}
             }
         },
 
