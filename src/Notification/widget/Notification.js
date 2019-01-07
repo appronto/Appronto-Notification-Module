@@ -208,7 +208,7 @@ define([
         },
 
         _onClose: function (obj) {
-            if (this.mfOnClose !== "") {
+            if (this.mfOnClose !== "" && this._contextObj != null) {
                 mx.data.action({
                     params: {
                         applyto: 'selection',
