@@ -8,3 +8,5 @@ test/.project
 .idea/
 
 node_modules
+/test/.svn
+/test/.mendix-cache
