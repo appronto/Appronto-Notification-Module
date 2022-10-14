@@ -1,20 +1,15 @@
-#Notification
+# Description
+A really nice notification anywhere in your screen you want. This is the best replacement for the default pop-up (info/warning/error)messages in Mendix. 
 
-This widget provides the functionality to display a custom message, sourced from either a transient or persistent object. The message is rendered utilizing the [noty](http://ned.im/noty/) jQuery plugin, so the position, style, and timeout can all be configured.
+## Breaking changes!
 
-# Getting Started
+With this upgrade we replace the widget that was used for the notifications. We use SweetAlert2 now. Inspired by the module that was already in the Marketplace by Jason Imeidopf. We have made it plug and play for nanoflows AND microflows. It will load the necessary javascript and CSS files. Only place the snippet in your layout and your are good to go. Exisiting calls to SF_CreateNotification are replaced by SUB_CreateNotifications. Rename the new microflow to the old name and back will solve this. The enums for status and position must be set again! It uses also HTML snippet from Mendix: https://marketplace.mendix.com/link/component/56 
 
-
-* The *Notification* widget can be downloaded from within the Mendix Business Modeler in the Mendix Appstore into any model that is built with Mendix 5+. Beware that the module works differently in Mendix 7. So upgrade this module when upgrading to Mendix 7.
-
-
+# Getting started
+The Notification module can be downloaded from the Mendix Marketplace into any model that is built with Mendix 8.18.18 (MTS) + and 9.0+.  
+ 
 # Configuration
-
-* Download module and give every User role the Module role ApprontoNotification.User so every user can see the notification
-* Drop the widget into the context of an entity
-* Apply the following properties:
- * *Show Notification* - Boolean attribute to determine if the message should be rendered
- * *Display Text* - String attribute, containing the message to be displayed
- * *Layout* - The position of the message
- * *Type* - The appearance of the message
- * *Timeout* - How long the message should be displayed, before fading out (in milliseconds.) Set this property to *0* to render the message until it is clicked by the user
+- Download module and give every User role the Module role ApprontoNotification.User so every user can see the notification
+- Download HTML/ JavaScript Snippet (if not already in your project)
+- Place the notification snippet on your Layouts
+- Use the microflows and nanoflows (see examples!) from the USE ME folder
