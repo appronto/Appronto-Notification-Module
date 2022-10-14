@@ -1,1 +1,0 @@
-"7za.exe"  u -r -tzip %~n1.mpk .\%~n1\*
