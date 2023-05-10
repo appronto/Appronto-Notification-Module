@@ -10,6 +10,6 @@ The Notification module can be downloaded from the Mendix Marketplace into any m
  
 # Configuration
 - Download module and give every User role the Module role ApprontoNotification.User so every user can see the notification
-- Download HTML/ JavaScript Snippet (if not already in your project)
+- Download HTML/ JavaScript widget (if not already in your project)
 - Place the notification snippet on your Layouts
 - Use the microflows and nanoflows (see examples!) from the USE ME folder
